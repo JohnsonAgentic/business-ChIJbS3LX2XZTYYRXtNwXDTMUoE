@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blue Diamond Plumbing of Texas (Plumber near you) - Local Service</title>
+  <style>
+    :root{
+      --bg: #f7f7f9;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #1e3a8a;
+      --accent-2: #2563eb;
+      --shadow: 0 2px 6px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    html, body { margin: 0; padding: 0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: var(--text); background: var(--bg); }
+    a { color: inherit; text-decoration: none; }
+    header { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid #e5e7eb; }
+    .container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 0;
+    }
+    .brand { font-weight: 700; font-size: 1.05rem; letter-spacing: .4px; color: #0f172a; }
+    nav ul { list-style: none; display: flex; gap: 16px; padding: 0; margin: 0; }
+    nav a { color: #374151; font-size: 0.95rem; }
+    .hero {
+      padding: 48px 0 28px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 1.9rem; line-height: 1.15; margin: 0 0 12px;
+    }
+    .hero p { color: var(--muted); margin: 0 0 20px; }
+    .cta {
+      display: inline-block;
+      background: var(--accent-2);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, .3);
+    }
+    .sections { padding: 24px 0 60px; }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid #eef0f2;
+    }
+    h2.section-title { font-size: 1.4rem; margin: 0 0 12px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    ul.checklist { padding-left: 20px; margin: 0; }
+    li { margin: 6px 0; }
+    .blue { color: #1e3a8a; }
+    .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .contact-item { padding: 12px; border-radius: 8px; background: #f8fafc; border: 1px solid #e2e8f0; }
+    .footer { text-align: center; color: var(--muted); font-size: 0.88rem; padding: 20px 0; }
+    @media (max-width: 900px){
+      .grid { grid-template-columns: 1fr; }
+      .contact { grid-template-columns: 1fr; }
+    }
+    @media (min-width: 700px){
+      .hero { padding: 64px 0 32px; }
+      .hero h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav" aria-label="Site navigation">
+      <div class="brand">Blue Diamond Plumbing of Texas (Plumber near you)</div>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Intro">
+      <div class="container">
+        <h1>Reliable Plumbing Services for Fort Worth and surrounding areas</h1>
+        <p>Blue Diamond Plumbing of Texas is your local plumber near you. We provide essential plumbing solutions with a focus on clear communication and quality workmanship.</p>
+        <button class="cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          Owner can add contact details later
+        </button>
+      </div>
+    </section>
+
+    <section id="services" class="sections" aria-labelledby="services-title">
+      <div class="container">
+        <div class="card">
+          <h2 id="services-title" class="section-title" style="margin-top:0;">Plumbing Services</h2>
+          <p style="margin-top:0; color:var(--muted);">As a plumber, Blue Diamond Plumbing of Texas offers essential plumbing services typical of the trade. Available offerings include:</p>
+          <ul class="checklist" aria-label="Plumbing services">
+            <li>General residential plumbing repairs</li>
+            <li>Pipes, fittings, and fixture installation and repair</li>
+            <li>Drain cleaning and unclogging</li>
+            <li>Water heater inspection and replacement support</li>
+            <li>Leak detection and repair</li>
+            <li>Emergency plumbing services</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="sections" aria-labelledby="about-title">
+      <div class="container grid">
+        <div class="card" aria-label="About Blue Diamond Plumbing of Texas">
+          <h2 id="about-title" class="section-title" style="margin-top:0;">About Blue Diamond Plumbing of Texas</h2>
+          <p style="margin:0;">
+            Blue Diamond Plumbing of Texas (Plumber near you) serves Fort Worth and surrounding areas. Mailing address: 5508 EASTWEDGE DR, FORT WORTH TX 76137-4380.
+          </p>
+        </div>
+        <div class="card" aria-label="Location">
+          <h2 class="section-title" style="margin-top:0;">Location</h2>
+          <p style="margin:0;">
+            5508 EASTWEDGE DR<br/>
+            FORT WORTH, TX 76137-4380
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="sections" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="grid" style="align-items:start;">
+          <div class="card contact" aria-label="Contact methods">
+            <div class="contact-item">
+              <strong>Phone</strong>
+              <div>(817) 852-9498</div>
+            </div>
+            <div class="contact-item">
+              <strong>Mailing Address</strong>
+              <div>5508 EASTWEDGE DR, FORT WORTH TX 76137-4380</div>
+            </div>
+          </div>
+          <div class="card" aria-label="Request a service">
+            <h2 id="contact-title" class="section-title" style="margin-top:0;">Request a Service</h2>
+            <p style="margin:0; color:var(--muted);">To request service, please contact the owner. The owner can add contact details later.</p>
+            <button class="cta" style="margin-top:8px;" onclick="alert('This is a placeholder action. The owner will add contact details later.')">
+              Request Service
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="Site footer">
+    © Blue Diamond Plumbing of Texas. All rights reserved.
+  </footer>
+</body>
+</html>
